@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DemoMaps</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="map_type_none">None</string>
+    <string name="map_type_normal">Normal</string>
+    <string name="map_type_terrain">Terrain</string>
+    <string name="map_type_satellite">Satellite</string>
+    <string name="map_type_hybrid">Hybrid</string>
+    <string name="where_do_you_wanna_go_button">Go!</string>
+    <string name="where_do_you_wanna_go">Where do you want to go?</string>
+    <string name="Coordinates">Coordinates: </string>
+    <string name="Request_Location">Request Current Location</string>
+</resources>

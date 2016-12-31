@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    tools:context="de.acl.demomaps.MapsActivity"
+    android:weightSum="1">
+
+    <EditText
+        android:ems="10"
+        android:hint="@string/where_do_you_wanna_go"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_gravity="center_horizontal" />
+
+
+    <Button
+        android:text="@string/where_do_you_wanna_go_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Go"
+        android:id="@+id/button"
+        android:onClick="geoLocate"
+        android:layout_gravity="start|center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Request_Location"
+        android:hint="@string/Request_Location"
+        android:onClick="showCoordinates"
+        android:id="@+id/button_one"
+        android:layout_gravity="start|center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="start|center"
+        android:layout_height="36dp"
+        android:textSize="20sp"
+        android:id="@+id/coordinatesArea"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/mapFragment"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="de.acl.demomaps.MapsActivity" />
+</LinearLayout>

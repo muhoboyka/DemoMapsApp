@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android= "http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="de.acl.demomaps.MapsActivity" >
+    <item
+        android:id="@+id/MapTypeNone"
+        android:title="@string/map_type_none" />
+    <!--Different objects located in strings.xml for my title-->
+    <item
+        android:id="@+id/MapTypeNormal"
+        android:title="@string/map_type_normal" />
+    <item
+        android:id="@+id/MapTypeTerrain"
+        android:title="@string/map_type_terrain" />
+    <item
+        android:id="@+id/MapTypeSatellite"
+        android:title="@string/map_type_satellite" />
+    <item
+        android:id="@+id/MapTypeHybrid"
+        android:title="@string/map_type_hybrid" />
+</menu>
